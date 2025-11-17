@@ -104,7 +104,7 @@ $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . url
             position: absolute;
             top: 200px;
             left: 30px;
-            right: 30px;
+            right: 150px;
             bottom: 80px;
             display: flex;
             gap: 40px;
@@ -140,6 +140,30 @@ $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . url
         .info-section {
             flex-grow: 1;
             padding-top: 10px;
+            background-image: url('fond.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .info-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.75);
+            border-radius: 8px;
+            z-index: 1;
+        }
+        
+        .info-section > * {
+            position: relative;
+            z-index: 2;
         }
 
         .info-item {
@@ -149,6 +173,7 @@ $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . url
             color: black;
             font-family: Arial, sans-serif;
             line-height: 1.4;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
         }
 
         .qr-section {
@@ -396,7 +421,7 @@ $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . url
                             position: absolute;
                             top: 200px;
                             left: 30px;
-                            right: 30px;
+                            right: 150px;
                             bottom: 80px;
                             display: flex;
                             gap: 40px;
@@ -432,6 +457,30 @@ $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . url
                         .info-section {
                             flex-grow: 1;
                             padding-top: 10px;
+                            background-image: url('fond.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            border-radius: 8px;
+                            padding: 15px;
+                            position: relative;
+                        }
+                        
+                        .info-section::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: rgba(255, 255, 255, 0.75);
+                            border-radius: 8px;
+                            z-index: 1;
+                        }
+                        
+                        .info-section > * {
+                            position: relative;
+                            z-index: 2;
                         }
 
                         .info-item {
@@ -441,6 +490,7 @@ $qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" . url
                             color: black;
                             font-family: Arial, sans-serif;
                             line-height: 1.4;
+                            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
                         }
 
                         .qr-section {
